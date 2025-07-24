@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yoga Session</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="yoga.css" />
+
+  <!-- Swiper -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="yoga-hero">
+    <div class="yoga-overlay">
+      <h1 class="yoga-title">Yoga for Strength & Calm</h1>
+      <p class="yoga-subtitle">Explore curated sessions for flexibility, peace, and well-being.</p>
+    </div>
+  </section>
+
+  <!-- Subsession Cards -->
+  <section class="yoga-session-container">
+    <div class="yoga-session-box"><h2>Beginner Yoga</h2></div>
+    <div class="yoga-session-box"><h2>Advanced Yoga</h2></div>
+    <div class="yoga-session-box"><h2>Chakra Healing</h2></div>
+    <div class="yoga-session-box"><h2>Morning Flow</h2></div>
+    <div class="yoga-session-box"><h2>Yoga Nidra</h2></div>
+  </section>
+
+  <!-- Video Sections -->
+  <section class="video-section">
+
+    <!-- Beginner Yoga -->
+    <div class="video-block">
+      <h2 class="video-heading">Beginner Yoga</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/v7AYKMP6rOE" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/oBu-pQG6sTY" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/4pKly2JojMw" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/X655B4ISakg" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/nQvHOgz8ffA" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/b1z4JfxFb6c" allowfullscreen></iframe></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!-- Advanced Yoga -->
+    <div class="video-block">
+      <h2 class="video-heading">Advanced Yoga</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/cPnb0U9ZTqs" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/E8QFJVA6Lq0" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/k_0mIhI3N6A" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/BO3d1CV6F9k" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/BO3d1CV6F9k" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/BO3d1CV6F9k" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/BO3d1CV6F9k" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/BO3d1CV6F9k" allowfullscreen></iframe></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!-- Chakra Healing -->
+    <div class="video-block">
+      <h2 class="video-heading">Chakra Healing</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/Lv5LwTJGozQ" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/Q2d8qGyXEB8" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/yzb2hwd0h3c" allowfullscreen></iframe></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!-- Morning Flow -->
+    <div class="video-block">
+      <h2 class="video-heading">Morning Flow</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/GQ8wNTPP3v8" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/m1r2wnDgBX0" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/kFhG-ZzLNN4" allowfullscreen></iframe></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!-- Yoga Nidra -->
+    <div class="video-block">
+      <h2 class="video-heading">Yoga Nidra</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/M0u9GST_j3s" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/7H0FKzeuVVs" allowfullscreen></iframe></div>
+          <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/Z3u9NE1oG1g" allowfullscreen></iframe></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="yoga.js"></script>
+
+</body>
+</html>

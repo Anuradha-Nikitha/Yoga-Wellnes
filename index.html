@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yoga Video Background</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="om-symbol">ॐ</div>
+    <div class="preloader-text">Loading your calm...</div>
+  </div>
+
+  <!-- Hero Section with video -->
+  <main id="hero">
+    <video class="hero-bg" autoplay muted loop playsinline>
+      <source src="videos/yoga.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay">
+      <h1 class="overlay-title">Breathe. Stretch. Grow.</h1>
+      <p class="overlay-subtitle">Begin your yoga journey today</p>
+      <button class="cta-button" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">Get Started</button>
+    </div>
+  </main>
+
+  <!-- Menu -->
+  <div class="menu-icon" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation -->
+  <div class="fullscreen-nav" id="fullscreenNav">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#sessions">Sessions</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <h2 class="section-title">About Us</h2>
+      <div class="section-divider"><i class="fas fa-leaf"></i></div>
+      <p class="section-description">
+        <br>
+        At <strong>Yoga Bliss</strong>, we believe yoga is more than just a practice—it's a way of life. 
+        Whether you're a beginner or a seasoned yogi, our sessions are crafted to bring balance, strength, 
+        and inner peace. Join us and explore the transformative power of breath and movement.
+      </p>
+      <div class="about-highlights">
+        <div class="highlight-card">
+          <i class="fas fa-user-graduate card-icon"></i>
+          <h3>Certified Instructors</h3>
+          <p>Learn from experienced, passionate yoga teachers who guide with care and mindfulness.</p>
+        </div>
+        <div class="highlight-card">
+          <i class="fas fa-users card-icon"></i>
+          <h3>All Levels Welcome</h3>
+          <p>Whether it's your first time or your hundredth, our classes are open and adaptable.</p>
+        </div>
+        <div class="highlight-card">
+          <i class="fas fa-spa card-icon"></i>
+          <h3>Holistic Wellness</h3>
+          <p>We combine movement, meditation, and breathwork to nourish body and mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sessions Section -->
+<section id="sessions" class="sessions-section">
+  <h2 class="section-title">Our Wellness Sessions</h2>
+
+  <div class="sessions-grid">
+    <!-- Yoga -->
+    <div class="session-card" onclick="window.location.href='sessions/yoga.html'">
+      <img src="images/yoga.jpg" alt="Yoga">
+      <div class="card-title">Yoga</div>
+    </div>
+
+    <!-- Workout -->
+    <div class="session-card" onclick="window.location.href='sessions/workout.html'">
+      <img src="images/workout.jpg" alt="Workout Sessions">
+      <div class="card-title">Workout</div>
+    </div>
+
+    <!-- Dance Fitness -->
+    <div class="session-card" onclick="window.location.href='sessions/dance.html'">
+      <img src="images/Dance Fitness.jpg" alt="Dance Fitness">
+      <div class="card-title">Dance Fitness</div>
+    </div>
+
+    <!-- Yoga for Health -->
+    <div class="session-card" onclick="window.location.href='sessions/health.html'">
+      <img src="images/health.jpg" alt="Yoga for Health">
+      <div class="card-title">Yoga for Health</div>
+    </div>
+
+    <!-- Diet Plans -->
+    <div class="session-card" onclick="window.location.href='sessions/diet.html'">
+      <img src="images/diet.jpg" alt="Diet Plans">
+      <div class="card-title">Diet Plans</div>
+    </div>
+
+    <!-- Home Remedies -->
+    <div class="session-card" onclick="window.location.href='sessions/remedies.html'">
+      <img src="images/HomeRemedies.jpg" alt="Home Remedies">
+      <div class="card-title">Home Remedies</div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="section-divider"><i class="fas fa-envelope"></i></div>
+    <p class="section-description">
+      We'd love to hear from you! Whether it's a question about sessions, collaboration, or feedback — send us a message.
+    </p>
+
+    <form class="contact-form">
+      <!-- Success Popup -->
+<div class="popup-overlay" id="successPopup">
+  <div class="popup-message">
+    <i class="fas fa-check-circle"></i>
+    <p>Your message has been sent successfully!</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+
+
+
+
+  
+  
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

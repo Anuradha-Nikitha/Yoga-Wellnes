@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #222;
+  overflow-x: hidden;
+}
+
+.yoga-hero {
+  position: relative;
+  height: 80vh;
+  background-image: url('../assets/images/yoga-card.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yoga-overlay {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.yoga-title {
+  font-size: 3rem;
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.yoga-subtitle {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.yoga-session-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 60px 40px;
+}
+
+.yoga-session-box {
+  background-color: #f8f8f8;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.yoga-session-box:hover {
+  transform: translateY(-5px);
+}
+
+.video-section {
+  padding: 60px 30px;
+  background: #fffdf7;
+}
+
+.video-block {
+  margin-bottom: 60px;
+}
+
+.video-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d4731c;
+  text-align: center;
+}
+
+.swiper {
+  width: 100%;
+  padding: 10px 0 40px;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  width: 300px !important;
+  height: 300px !important;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide iframe {
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  object-fit: cover;
+  pointer-events: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #d4731c;
+  top: 40%;
+}
